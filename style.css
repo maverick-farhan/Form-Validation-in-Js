@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat', sans-serif;
+}
+
+body,html{
+width:100vw;
+min-height:100vh;
+background-image: url("./wallpaper.jpg");
+background-position: center;
+background-size:cover;
+background-repeat: no-repeat;
+}
+main{
+width:100%;
+overflow:hidden;
+height:100vh;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+div#container{
+background-color:rgba(255,255,255,.7);
+backdrop-filter: blur(100px);
+border-radius:10px;
+-webkit-border-radius:10px;
+box-shadow:0 2.8px 2.2px rgba(0,0,0,.034), 0 6.7px 5.3px rgba(0,0,0,.048), 0 12;
+overflow:hidden;
+width:calc(100vw - 55vw);
+/*space should be given in between - */
+}
+
+.header{
+backdrop-filter: blur(34px);
+background-color:rgba(195, 94, 0,.3);
+padding:10px 0;
+max-width:100%;
+}
+.header h1{
+font-weight:900;
+color:#111;
+font-family:Montserrat;
+font-size:24px;
+text-transform:uppercase;
+text-align:center;
+}
+
+.submit{
+all:unset;
+padding:10px;
+display:block;
+color:orange;
+background-color:#111;
+width:90%;
+margin:auto;
+cursor:pointer;
+transition:all .3s ease;
+text-align: center;
+border-radius:10px;
+}
+
+.submit:hover{
+color:black;
+background-color:orangered;
+}
+
+form#form{
+padding:20px;
+position:relative;
+}
+
+div.form-control{
+position: relative;
+padding:10px;
+}
+div.form-control label{
+	display:inline-block;
+	margin-bottom:5px;
+	font-size:16px;
+}
+div.form-control input{
+	width:100%;
+	border:2px solid #f0f0f0;
+	border-radius:4px;
+	display:block;
+	font-size:14px;
+	padding:11px;
+	margin:4px 0px;
+}
+div.form-control input:focus{
+outline:0px;
+border-color:#777;
+}
+
+
+div.form-control.success input{
+border-color:#2ecc71;
+}
+div.form-control.error input{
+border-color:#e74c3c;
+}
+
+.form-control i{
+position:absolute;
+right:17px;
+top:54px;
+visibility:hidden;
+}
+
+.form-control.success i.fa-circle-check{
+color:#2ecc71;
+visibility: visible;
+}
+
+.form-control.error i.fa-circle-exclamation{
+color:#e74c3c;
+visibility: visible;
+}
+
+div.form-control small{
+visibility:hidden;
+position:absolute;
+bottom:3px;
+left:10px;
+}
+
+div.form-control.success small{
+color:#2ecc71;
+visibility: visible;
+}
+div.form-control.error small{
+color:#e74c3c;
+visibility: visible;
+ }
